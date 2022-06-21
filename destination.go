@@ -16,14 +16,14 @@ func main() {
 	for _, innerObject := range input {
 
 		for i, k := range innerObject {
-			if i == 0 {
-				dict[k] = 0
+			if i == 1 {
+				dict[k] = 1
 			} else {
 
 				if _, ok := dict[k]; ok {
 					delete(dict, k)
 				} else {
-					dict[k] = 1
+					dict[k] = 0
 				}
 			}
 		}
